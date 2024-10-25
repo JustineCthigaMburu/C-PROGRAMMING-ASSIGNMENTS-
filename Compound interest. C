@@ -1,0 +1,42 @@
+// PROGRAM TO FIND COMPOUND INTEREST 
+/* 
+AUTHOR: MBURU C JUSTINE THIGA 
+REGISTRATION NUMBER: CT101/G/21512/24
+DATE: 23/09/24
+*/
+
+#include<stdio.h>
+#include<math.h>
+
+int main ()  {
+    // Declaration and initialization of variables 
+   float principal;
+   float rate;
+   float time;
+   int n;
+   float amount;
+   float compound_interest;
+    
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    
+    printf("Enter the interest rate (in percentage): ");
+    scanf("%f", &rate);
+     
+    printf("Enter the time (in years): ");
+    scanf("%f", &time);
+     
+    printf("Enter the number of times interest is compounded annually: ");
+    scanf("%d", &n);
+     
+    rate = rate / 100;
+    
+    amount = principal * pow((1 + rate / n), n * time);
+    
+    compound_interest = amount - principal; 
+    
+    printf("Total amount = %.2f\n", amount);
+    printf("Compound interest = %.2f\n", compound_interest);
+    
+    return 0;
+}
