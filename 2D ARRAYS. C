@@ -3,6 +3,7 @@
    REGISTRATION NUMBER: CT101/G/21512/24
    DATE: 08/09/2024
 */
+//preprocessing directives scanf() printf ()
 #include <stdio.h>
 int main() { 
       int i,j;
